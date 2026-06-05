@@ -167,7 +167,7 @@ transform:translateY(-100px) rotate(0deg);
 to{
 transform:translateY(120vh) rotate(720deg);
 }
-
+} 
 .star{
     font-size:2rem;
     cursor:pointer;
