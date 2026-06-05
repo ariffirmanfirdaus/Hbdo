@@ -161,3 +161,25 @@ for(let i = 0; i < 29; i++) {
     starsContainer.appendChild(star);
 
 }
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+let playing = false;
+
+musicBtn.addEventListener("click", () => {
+
+    if(!playing){
+
+        music.play();
+        musicBtn.innerHTML = "🔇 Musik OFF";
+        playing = true;
+
+    }else{
+
+        music.pause();
+        musicBtn.innerHTML = "🔊 Musik ON";
+        playing = false;
+
+    }
+
+});
