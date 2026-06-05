@@ -1,0 +1,170 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+min-height:100vh;
+}
+
+.hidden{
+display:none;
+}
+
+#welcome{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+#welcome h1{
+font-size:3rem;
+color:gold;
+text-shadow:0 0 20px gold;
+margin-bottom:20px;
+}
+
+#welcome p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+button{
+padding:14px 30px;
+border:none;
+border-radius:40px;
+background:gold;
+font-weight:bold;
+cursor:pointer;
+font-size:1rem;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.age{
+font-size:7rem;
+font-weight:bold;
+color:gold;
+text-shadow:
+0 0 10px gold,
+0 0 20px gold,
+0 0 40px gold;
+}
+
+.hero h1{
+font-size:3rem;
+margin-top:10px;
+}
+
+.hero h2{
+color:gold;
+font-size:2.5rem;
+margin-top:10px;
+}
+
+.cake-section{
+text-align:center;
+padding:50px 20px;
+}
+
+#candle{
+font-size:4rem;
+margin-bottom:10px;
+transition:.5s;
+}
+
+.cake{
+font-size:7rem;
+}
+
+#wishResult{
+margin-top:20px;
+color:gold;
+font-size:1.2rem;
+}
+
+.letter{
+width:90%;
+max-width:800px;
+margin:40px auto;
+padding:30px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,215,0,.3);
+border-radius:20px;
+line-height:1.9;
+}
+
+.letter h3{
+margin-bottom:20px;
+color:gold;
+}
+
+.stars-section{
+text-align:center;
+padding:40px 20px 80px;
+}
+
+.stars-section h3{
+margin-bottom:30px;
+color:gold;
+}
+
+#stars{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(60px,1fr));
+gap:12px;
+max-width:900px;
+margin:auto;
+}
+
+.star{
+font-size:2rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.star:hover{
+transform:scale(1.3);
+}
+
+#confetti{
+position:fixed;
+inset:0;
+pointer-events:none;
+overflow:hidden;
+z-index:999;
+}
+
+.confetti-piece{
+position:absolute;
+width:8px;
+height:14px;
+background:gold;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+from{
+transform:translateY(-100px) rotate(0deg);
+}
+to{
+transform:translateY(120vh) rotate(720deg);
+}
+}
