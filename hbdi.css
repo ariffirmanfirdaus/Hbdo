@@ -167,4 +167,14 @@ transform:translateY(-100px) rotate(0deg);
 to{
 transform:translateY(120vh) rotate(720deg);
 }
+
+.star{
+    font-size:2rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.star:hover{
+    transform:scale(1.35) rotate(10deg);
+    filter:drop-shadow(0 0 10px gold);
 }
